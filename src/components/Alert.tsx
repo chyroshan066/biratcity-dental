@@ -18,20 +18,20 @@ type AlertProps = {
 
 const alertStyles = {
     success: {
-        container: "bg-[var(--gold-crayola)]/10 border-l-4 border-[var(--gold-crayola)]",
-        icon: "text-[var(--gold-crayola)]",
-        title: "text-[var(--gold-crayola)]",
-        message: "text-white/90",
-        closeButton: "text-[var(--gold-crayola)] hover:text-white hover:bg-[var(--gold-crayola)]/20",
+        container: "bg-[var(--carolina-blue)]/30 border-l-4 border-[var(--carolina-blue)] backdrop-blur-sm",
+        icon: "text-[var(--carolina-blue)]",
+        title: "text-[var(--oxford-blue-1)]",
+        message: "text-[var(--oxford-blue-2)]",
+        closeButton: "text-[var(--sonic-silver)] hover:text-[var(--carolina-blue)] hover:bg-[var(--carolina-blue)]/10 rounded-full",
         name: "checkmark-circle-outline",
     },
     error: {
-        container: "bg-[var(--smoky-black-2)] border-l-4 border-[var(--quick-silver)]",
-        icon: "text-[var(--quick-silver)]",
-        title: "text-white",
-        message: "text-[var(--quick-silver)]",
-        closeButton: "text-[var(--quick-silver)] hover:text-white hover:bg-[var(--smoky-black-1)]",
-        name: "bug-outline",
+        container: "bg-red-50 border-l-4 border-red-500 backdrop-blur-sm",
+        icon: "text-red-500",
+        title: "text-[var(--oxford-blue-1)]",
+        message: "text-[var(--oxford-blue-2)]",
+        closeButton: "text-[var(--sonic-silver)] hover:text-red-500 hover:bg-red-50 rounded-full",
+        name: "alert-circle-outline",
     },
 } as const;
 
