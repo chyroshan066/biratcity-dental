@@ -62,6 +62,7 @@
     --shadow-3: 0px 20px 60px var(--black_8);
     --shadow-4: 0px 10px 30px var(--flickr-blue_30);
     --shadow-5: 0px 2px 60px 0px var(--black_10);
+    --shadow-6: 0px 0px 60px var(--black_8);
 
     /* BORDER RADIUS*/
     --radius-6: 6px;

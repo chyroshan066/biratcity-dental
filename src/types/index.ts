@@ -28,4 +28,5 @@ export interface Testimonial {
     rating: number;
     text: string;
     image: string;
+    position?: string;
 }

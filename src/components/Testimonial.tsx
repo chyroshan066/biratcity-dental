@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, memo } from 'react';
-import { TESTIMONIALS } from '@/constants/testimonials';
 import Image from 'next/image';
 import { CaretLeftIcon, CaretRightIcon, QuotesIcon, StarIcon, XIcon } from '@phosphor-icons/react';
 import { createPortal } from 'react-dom';
+import { Testimonial } from '@/types';
+import { TESTIMONIALS } from '@/constants';
 
 interface Statistics {
     title: string;
@@ -31,7 +32,7 @@ const TestimonialModal = memo(({
     isOpen,
     onClose
 }: {
-    testimonial: any;
+    testimonial: Testimonial;
     isOpen: boolean;
     onClose: () => void;
 }) => {
@@ -193,11 +194,11 @@ const TestimonialModal = memo(({
 
 TestimonialModal.displayName = 'TestimonialModal';
 
-const TestimonialSlider: React.FC = () => {
+export const TestimonialSlider = memo(() => {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
     const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedTestimonial, setSelectedTestimonial] = useState<any>(null);
+    const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null);
     const [isTextTruncated, setIsTextTruncated] = useState<boolean[]>([]);
     const [mounted, setMounted] = useState(false);
     const textRefs = useRef<(HTMLElement | null)[]>([]);
@@ -246,7 +247,7 @@ const TestimonialSlider: React.FC = () => {
         };
     }, [checkTextTruncation, mounted]);
 
-    const openModal = useCallback((testimonial: any) => {
+    const openModal = useCallback((testimonial: Testimonial) => {
         setSelectedTestimonial(testimonial);
         setIsModalOpen(true);
     }, []);
@@ -270,7 +271,7 @@ const TestimonialSlider: React.FC = () => {
         <>
             <section
                 className="section"
-                style={{ background: 'linear-gradient(to bottom, var(--cultured), var(--white))' }}
+            // style={{ background: 'linear-gradient(to bottom, var(--cultured), var(--white))' }}
             >
                 <div className="custom-container">
 
@@ -304,7 +305,7 @@ const TestimonialSlider: React.FC = () => {
                         style={{
                             backgroundColor: 'var(--white)',
                             borderRadius: 'var(--radius-6)',
-                            boxShadow: 'var(--shadow-3)'
+                            boxShadow: 'var(--shadow-6)'
                         }}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
@@ -423,7 +424,7 @@ const TestimonialSlider: React.FC = () => {
                                                 {isTextTruncated[index] && (
                                                     <button
                                                         onClick={() => openModal(testimonial)}
-                                                        className="transition-colors duration-200 cursor-pointer"
+                                                        className="transition-colors duration-200 cursor-pointer -mt-5"
                                                         style={{
                                                             color: 'var(--royal-blue-light)',
                                                             fontSize: 'var(--fontSize-7)',
@@ -609,6 +610,6 @@ const TestimonialSlider: React.FC = () => {
             )}
         </>
     );
-};
+});
 
-export default TestimonialSlider;
+TestimonialSlider.displayName = "TestimonialSlider";
