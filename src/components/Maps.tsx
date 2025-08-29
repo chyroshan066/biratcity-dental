@@ -9,9 +9,31 @@ interface ClinicLocation {
     address: string;
 }
 
+interface LeafletMapOptions {
+    center: [number, number];
+    zoom: number;
+    zoomControl: boolean;
+    scrollWheelZoom: boolean;
+    touchZoom: boolean;
+    doubleClickZoom: boolean;
+    boxZoom: boolean;
+    keyboard: boolean;
+    dragging: boolean;
+}
+
+interface LeafletTileLayerOptions {
+    attribution: string;
+    maxZoom: number;
+}
+
 interface LeafletMap {
     remove: () => void;
     invalidateSize: () => void;
+    setView: (coords: [number, number], zoom: number) => void;
+}
+
+interface LeafletTileLayer {
+    addTo: (map: LeafletMap) => void;
 }
 
 interface LeafletIcon {
@@ -22,24 +44,23 @@ interface LeafletIcon {
     popupAnchor: [number, number];
 }
 
+interface LeafletMarkerOptions {
+    icon: LeafletIcon;
+}
+
 interface LeafletMarker {
     bindPopup: (content: string) => LeafletMarker;
+    addTo: (map: LeafletMap) => LeafletMarker;
 }
 
 // Extend Window interface for Leaflet
 declare global {
     interface Window {
         L: {
-            map: (element: HTMLElement, options: any) => LeafletMap & {
-                setView: (coords: [number, number], zoom: number) => void;
-            };
-            tileLayer: (url: string, options: any) => {
-                addTo: (map: any) => void;
-            };
-            divIcon: (options: Partial<LeafletIcon>) => any;
-            marker: (coords: [number, number], options: any) => LeafletMarker & {
-                addTo: (map: any) => LeafletMarker;
-            };
+            map: (element: HTMLElement, options: LeafletMapOptions) => LeafletMap;
+            tileLayer: (url: string, options: LeafletTileLayerOptions) => LeafletTileLayer;
+            divIcon: (options: Partial<LeafletIcon>) => LeafletIcon;
+            marker: (coords: [number, number], options: LeafletMarkerOptions) => LeafletMarker;
         };
     }
 }
@@ -199,11 +220,6 @@ export const Maps: React.FC = () => {
             };
         }
     }, [isLoaded, clinicLocation.lat, clinicLocation.lng, clinicLocation.name, clinicLocation.address]);
-
-    const handleDirectionsClick = (): void => {
-        const googleMapsUrl = `https://www.google.com/maps/dir//${clinicLocation.lat},${clinicLocation.lng}`;
-        window.open(googleMapsUrl, '_blank');
-    };
 
     return (
         <section className="section">

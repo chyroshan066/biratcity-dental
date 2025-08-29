@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 
-interface Reservation extends Record<string, unknown>  {
+interface Appointment extends Record<string, unknown>  {
     name: string;
     phone: string;
     gender: string;
@@ -9,11 +9,11 @@ interface Reservation extends Record<string, unknown>  {
     message: string;
 }
 
-interface Email extends Reservation {
+interface Email extends Appointment {
     timeStamp: string;
 }
 
-export const onSubmit = async (data: Reservation) => {
+export const onSubmit = async (data: Appointment) => {
     try{
         const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
         const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;

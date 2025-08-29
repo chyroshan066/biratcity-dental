@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { onSubmit } from "@/utils/formData";
-import { ReservationFormData, ReservationFormSchema } from "@/middlewares/schema";
+import { AppointmentFormData, AppointmentFormSchema } from "@/middlewares/schema";
 import { SubmitButton } from "./utility/Button/SubmitButton";
 import { ErrorMessage, InputField } from "./utility/InputField";
 import { Alert } from "./Alert";
@@ -18,12 +18,12 @@ interface AlertState {
     message: string;
 }
 
-const initialValues: ReservationFormData = {
+const initialValues: AppointmentFormData = {
     name: "",
     phone: "",
     gender: "Male",
     date: "",
-    time: "10:00am",
+    time: "09:00am",
     message: "",
 };
 
@@ -42,9 +42,9 @@ export const Appintment = memo(() => {
             errors,
             isSubmitting,
         }
-    } = useForm<ReservationFormData>({
+    } = useForm<AppointmentFormData>({
         defaultValues: initialValues,
-        resolver: zodResolver(ReservationFormSchema),
+        resolver: zodResolver(AppointmentFormSchema),
         mode: "onChange", // Enable real-time validation for better UX
         reValidateMode: "onChange", // Re-validate on every change
         criteriaMode: "all", // Show all validation errors
@@ -71,21 +71,21 @@ export const Appintment = memo(() => {
         }));
     }, []);
 
-    const handleFormSubmit = useCallback(async (data: ReservationFormData) => {
+    const handleFormSubmit = useCallback(async (data: AppointmentFormData) => {
         try {
             await onSubmit(data);
 
             showAlert(
                 "success",
-                "Thank you! Your table has been reserved successfully. We look forward to serving you.",
-                "Table Reserved!"
+                "Thank you! Your appointment has been booked successfully. We look forward to serving you.",
+                "Appointment Booked!"
             );
 
             reset(initialValues);
         } catch (error) {
             const errorMessage = error instanceof Error
                 ? error.message
-                : "Something went wrong while booking the table. Please try again.";
+                : "Something went wrong while booking an appointment. Please try again.";
 
             showAlert(
                 "error",
@@ -105,7 +105,7 @@ export const Appintment = memo(() => {
     );
 
     const buttonText = useMemo(
-        () => isSubmitting ? "Booking..." : "Book A Table",
+        () => isSubmitting ? "Booking..." : "Book An Appointment",
         [isSubmitting]
     );
 
@@ -226,16 +226,16 @@ export const Appintment = memo(() => {
                                     {...register("time")}
                                     className="input-field"
                                 >
-                                    {[...Array(3)].map((_, index) => (
+                                    {[...Array(4)].map((_, index) => (
                                         <option
                                             key={index}
-                                            value={`${10 + index}:00am`}
+                                            value={`${index < 1 ? `0${9 + index}` : 9 + index}:00am`}
                                         >
-                                            {10 + index} : 00 am
+                                            {index < 1 ? `0${9 + index}` : 9 + index} : 00 am
                                         </option>
                                     ))}
 
-                                    {[...Array(5)].map((_, index) => (
+                                    {[...Array(7)].map((_, index) => (
                                         <option
                                             key={index}
                                             value={`${index < 9 ? `0${1 + index}` : 1 + index}:00pm`}
