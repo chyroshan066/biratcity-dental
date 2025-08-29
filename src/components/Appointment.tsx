@@ -135,8 +135,8 @@ export const Appintment = memo(() => {
                     >
                         <h2 className="headline-1 text-center">Book Appointment</h2>
                         <p className="form-text text-center">
-                            Booking request <a href="tel:+977-25-582240" className="link">+977-25-582240 </a>
-                            or fill out the order form
+                            Booking request <a href="tel:+977-25-582240" className="link">986-1089258 </a>
+                            or fill out the appointment form
                         </p>
                         <div className="input-wrapper">
 
@@ -274,28 +274,25 @@ export const Appintment = memo(() => {
 
                     </form>
 
-                    <div
-                        className="form-right text-center form-right-bg"
-                    // style={{ "backgroundImage": "url('/images/form-pattern.webp')" } as React.CSSProperties}
-                    >
+                    <div className="form-right text-center form-right-bg">
                         <h2 className="headline-1 text-center">Contact Us</h2>
                         <p className="contact-label">Booking Request</p>
                         <a
-                            href="tel:+88123123456"
+                            href="tel:+9779861089258"
                             className="body-1 contact-number hover-underline"
                         >
-                            +977-25-570068
+                            986-1089258
                         </a>
                         <div className="separator"></div>
                         <p className="contact-label">Location</p>
                         <address className="body-4">
-                            Ganeshman Chowk,  <br />
-                            Dharan, Nepal
+                            Manendra Chowk,  <br />
+                            Biratnagar, Nepal
                         </address>
                         <p className="contact-label">Daily</p>
                         <p className="body-4">
                             Monday to Sunday <br />
-                            9.00 am - 10.00pm
+                            9.00 am - 7.00pm
                         </p>
                     </div>
                 </div>

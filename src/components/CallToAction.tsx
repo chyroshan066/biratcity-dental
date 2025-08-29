@@ -11,7 +11,7 @@ export const CallToAction = memo(() => (
 
             <figure className="cta-banner">
                 <Image
-                    src="/images/cta-banner.png"
+                    src="/images/cta-banner.webp"
                     width={1056}
                     height={1076}
                     loading="lazy"

@@ -43,20 +43,20 @@ export const Header = memo(() => {
                         <li className="contact-item">
                             <IonIcon name="mail-outline" />
                             <a
-                                href="mailto:rathidental.ith@gmail.com"
+                                href="mailto:mandalbaski8284@gmail.com"
                                 className="contact-link"
                             >
-                                rathidental.ith@gmail.com
+                                mandalbaski8284@gmail.com
                             </a>
                         </li>
 
                         <li className="contact-item">
                             <IonIcon name="call-outline" />
                             <a
-                                href="tel:025582240"
+                                href="tel:9861089258"
                                 className="contact-link"
                             >
-                                025-582240
+                                986-1089258
                             </a>
                         </li>
 
@@ -83,7 +83,7 @@ export const Header = memo(() => {
                         href="#"
                         className="logo"
                     >
-                        Rathi Dental
+                        Basuki Dental
                     </a>
                     <nav
                         className={`navbar custom-container ${isNavActive ? 'active' : ''}`}

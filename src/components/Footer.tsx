@@ -54,10 +54,10 @@ export const Footer = memo(() => (
                         href="#"
                         className="logo"
                     >
-                        Rathi Dental
+                        Basuki Dental
                     </a>
                     <p className="footer-text">
-                        Your trusted <strong>dental clinic in Itahari</strong> for <strong>dental implants</strong>, <strong>braces</strong>, <strong>cosmetic dentistry</strong>, <strong>root canal</strong>, <strong>teeth whitening</strong>, <strong>orthodontics</strong>, and <strong>family dental care</strong> at an affordable price. Visit <strong>Rathi Dental Nepal</strong> for healthy smiles.
+                        Your trusted <strong>dental clinic in Biratnagar</strong> for <strong>dental implants</strong>, <strong>braces</strong>, <strong>cosmetic dentistry</strong>, <strong>root canal</strong>, <strong>teeth whitening</strong>, <strong>orthodontics</strong>, and <strong>family dental care</strong> at an affordable price. Visit <strong>Basuki Dental Nepal</strong> for healthy smiles.
                     </p>
 
                     <div className="schedule">
@@ -65,8 +65,8 @@ export const Footer = memo(() => (
                             <IonIcon name="time-outline" />
                         </div>
                         <span className="span">
-                            Saturday - Sunday:<br />
-                            10:00 AM - 5:00 PM
+                            Monday - Sunday:<br />
+                            9:00 AM - 7:00 PM
                         </span>
                     </div>
 
@@ -90,8 +90,8 @@ export const Footer = memo(() => (
                             <IonIcon name="location-outline" />
                         </div>
                         <address className="item-text">
-                            Hatiya Line, Itahari-6 <br />
-                            Sunsari, Nepal
+                            Mahendra Chowk, Biratnagar-11 <br />
+                            Morang, Nepal
                         </address>
                     </li>
 
@@ -100,10 +100,10 @@ export const Footer = memo(() => (
                             <IonIcon name="call-outline" />
                         </div>
                         <a
-                            href="tel:+917052101786"
+                            href="tel:+9779861089258"
                             className="footer-link"
                         >
-                            025-582240
+                            986-1089258
                         </a>
                     </li>
 
@@ -112,10 +112,10 @@ export const Footer = memo(() => (
                             <IonIcon name="mail-outline" />
                         </div>
                         <a
-                            href="mailto:help@example.com"
+                            href="mailto:mandalbaski8284@gmail.com"
                             className="footer-link"
                         >
-                            rathidental.ith@gmail.com
+                            mandalbaski8284@gmail.com
                         </a>
                     </li>
 
@@ -126,7 +126,7 @@ export const Footer = memo(() => (
         <div className="footer-bottom">
             <div className="custom-container">
                 <p className="copyright">
-                    &copy; 2025 All Rights Reserved by Rathi Dental.
+                    &copy; 2025 All Rights Reserved by Basuki Dental.
                 </p>
                 <ul className="social-list">
 

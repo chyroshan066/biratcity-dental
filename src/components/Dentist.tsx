@@ -5,7 +5,7 @@ import { Doctors } from "@/types";
 import { DOCTORS } from "@/constants";
 import { TitleHeader } from "./utility/TitleHeader";
 
-const DoctorCard = memo(({
+const DentistCard = memo(({
     imgSrc, name, ionIcon
 }: Doctors) => (
     <li className="scrollbar-item">
@@ -50,12 +50,13 @@ const DoctorCard = memo(({
     </li>
 ));
 
-DoctorCard.displayName = "DoctorCard";
+DentistCard.displayName = "DentistCard";
 
-export const Doctor = memo(() => (
+export const Dentist = memo(() => (
     <section
         className="section doctor"
         aria-label="doctor"
+        id="dentist"
     >
         <div className="custom-container">
 
@@ -67,7 +68,7 @@ export const Doctor = memo(() => (
             <ul className="has-scrollbar">
 
                 {DOCTORS.map((doctor, index) => (
-                    <DoctorCard
+                    <DentistCard
                         key={index}
                         imgSrc={doctor.imgSrc}
                         name={doctor.name}
@@ -80,4 +81,4 @@ export const Doctor = memo(() => (
     </section>
 ));
 
-Doctor.displayName = "Doctor";
+Dentist.displayName = "Dentist";

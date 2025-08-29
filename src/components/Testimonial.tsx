@@ -1,0 +1,358 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { TESTIMONIALS } from '@/constants/testimonials';
+import Image from 'next/image';
+import { CaretLeftIcon, CaretRightIcon, QuotesIcon, StarIcon } from '@phosphor-icons/react';
+
+interface Statistics {
+    title: string;
+    subTitle: string;
+}
+
+const STATISTICS: Statistics[] = [
+    {
+        title: "500+",
+        subTitle: "Happy Patients",
+    },
+    {
+        title: "5+",
+        subTitle: "Years Experience",
+    },
+    {
+        title: "5.0★",
+        subTitle: "Average Rating",
+    },
+]
+
+const TestimonialSlider: React.FC = () => {
+    const [currentSlide, setCurrentSlide] = useState<number>(0);
+    const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
+
+    const nextSlide = (): void => {
+        setCurrentSlide((prev) => (prev + 1) % TESTIMONIALS.length);
+    };
+
+    const prevSlide = (): void => {
+        setCurrentSlide((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
+    };
+
+    const goToSlide = (index: number): void => {
+        setCurrentSlide(index);
+    };
+
+    useEffect(() => {
+        if (!isAutoPlaying) return;
+
+        const interval = setInterval(nextSlide, 5000);
+        return () => clearInterval(interval);
+    }, [isAutoPlaying]);
+
+    const handleMouseEnter = (): void => setIsAutoPlaying(false);
+    const handleMouseLeave = (): void => setIsAutoPlaying(true);
+
+    return (
+        <section
+            className="section"
+            style={{ background: 'linear-gradient(to bottom, var(--cultured), var(--white))' }}
+        >
+            <div className="custom-container">
+
+                {/* Section Header */}
+                <div
+                    className="text-center"
+                    style={{ marginBlockEnd: '50px' }}
+                >
+                    <h2
+                        className="h2"
+                        style={{ marginBlockEnd: '15px' }}
+                    >
+                        What Our Patients Say
+                    </h2>
+                    <p
+                        className="section-text"
+                        style={{
+                            color: 'var(--sonic-silver)',
+                            fontSize: 'var(--fontSize-6)',
+                            lineHeight: '1.7',
+                            maxWidth: '600px',
+                            margin: '0 auto'
+                        }}>
+                        Real experiences from real patients who trust us with their dental health
+                    </p>
+                </div>
+
+                {/* Testimonial Slider */}
+                <div
+                    className="relative overflow-hidden"
+                    style={{
+                        backgroundColor: 'var(--white)',
+                        borderRadius: 'var(--radius-6)',
+                        boxShadow: 'var(--shadow-3)'
+                    }}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <div
+                        className="relative"
+                        style={{ minHeight: '400px' }}
+                    >
+                        {TESTIMONIALS.map((testimonial, index) => (
+                            <div
+                                key={testimonial.id}
+                                className="absolute inset-0"
+                                style={{
+                                    opacity: index === currentSlide ? 1 : 0,
+                                    transform: index === currentSlide ? 'translateX(0)' :
+                                        index < currentSlide ? 'translateX(-100%)' : 'translateX(100%)',
+                                    transition: 'all var(--transition-2)'
+                                }}
+                            >
+                                <div
+                                    className="flex flex-col lg:flex-row items-center h-full"
+                                    style={{ padding: '40px' }}
+                                >
+
+                                    {/* Quote Icon */}
+                                    <div
+                                        className="absolute"
+                                        style={{
+                                            top: '25px',
+                                            left: '25px',
+                                            color: 'var(--lavender-web)'
+                                        }}
+                                    >
+                                        <QuotesIcon size={48} color="currentColor" weight="fill" />
+                                    </div>
+
+                                    {/* Patient Image */}
+                                    <div
+                                        className="flex-shrink-0"
+                                        style={{
+                                            marginBlockEnd: '25px',
+                                            marginInlineEnd: '30px'
+                                        }}>
+                                        <div className="relative">
+
+                                            <Image
+                                                src={testimonial.image}
+                                                alt={testimonial.name}
+                                                width={120}
+                                                height={120}
+                                                className="img-cover"
+                                                style={{
+                                                    width: '120px',
+                                                    height: '120px',
+                                                    borderRadius: '50%',
+                                                    border: '4px solid var(--lavender-web)'
+                                                }}
+                                            />
+
+                                            <div
+                                                className="absolute"
+                                                style={{
+                                                    bottom: '-8px',
+                                                    right: '-8px',
+                                                    backgroundImage: 'var(--gradient)',
+                                                    color: 'var(--white)',
+                                                    borderRadius: '50%',
+                                                    padding: '8px'
+                                                }}
+                                            >
+                                                <StarIcon size={16} color="currentColor" weight="fill" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Testimonial Content */}
+                                    <div className="flex-1 text-center lg:text-left">
+                                        {/* Stars */}
+                                        <div
+                                            className="flex justify-center lg:justify-start"
+                                            style={{ marginBlockEnd: '20px' }}
+                                        >
+                                            {[...Array(testimonial.rating)].map((_, i: number) => (
+                                                <StarIcon
+                                                    key={i}
+                                                    size={20}
+                                                    color="#ffd700"
+                                                    weight="fill"
+                                                    style={{
+                                                        marginInlineEnd: '4px'
+                                                    }}
+                                                />
+                                            ))}
+                                        </div>
+
+                                        {/* Testimonial Text */}
+                                        <blockquote
+                                            className="card-text"
+                                            style={{
+                                                color: 'var(--jet)',
+                                                fontSize: 'var(--fontSize-6)',
+                                                fontWeight: 'var(--weight-500)',
+                                                fontStyle: 'italic',
+                                                marginBlockEnd: '25px',
+                                                lineHeight: '1.7'
+                                            }}
+                                        >
+                                            "{testimonial.text}"
+                                        </blockquote>
+
+                                        {/* Patient Info */}
+                                        <div>
+                                            <h4
+                                                className="h3"
+                                                style={{
+                                                    color: 'var(--oxford-blue-1)',
+                                                    marginBlockEnd: '5px'
+                                                }}
+                                            >
+                                                {testimonial.name}
+                                            </h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Navigation Arrows */}
+                    <button
+                        onClick={prevSlide}
+                        className="absolute"
+                        style={{
+                            left: '15px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            backgroundColor: 'var(--white)',
+                            color: 'var(--sonic-silver)',
+                            borderRadius: '50%',
+                            padding: '12px',
+                            boxShadow: 'var(--shadow-2)',
+                            transition: 'var(--transition)',
+                            zIndex: 10,
+                            border: 'none',
+                            cursor: 'pointer'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.backgroundColor = 'var(--lavender-web)';
+                            e.currentTarget.style.color = 'var(--royal-blue-light)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.backgroundColor = 'var(--white)';
+                            e.currentTarget.style.color = 'var(--sonic-silver)';
+                        }}
+                        aria-label="Previous testimonial"
+                    >
+                        <CaretLeftIcon size={24} />
+                    </button>
+
+                    <button
+                        onClick={nextSlide}
+                        className="absolute"
+                        style={{
+                            right: '15px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            backgroundColor: 'var(--white)',
+                            color: 'var(--sonic-silver)',
+                            borderRadius: '50%',
+                            padding: '12px',
+                            boxShadow: 'var(--shadow-2)',
+                            transition: 'var(--transition)',
+                            zIndex: 10,
+                            border: 'none',
+                            cursor: 'pointer'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.backgroundColor = 'var(--lavender-web)';
+                            e.currentTarget.style.color = 'var(--royal-blue-light)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.backgroundColor = 'var(--white)';
+                            e.currentTarget.style.color = 'var(--sonic-silver)';
+                        }}
+                        aria-label="Next testimonial"
+                    >
+                        <CaretRightIcon size={32} />
+                    </button>
+                </div>
+
+                {/* Dots Indicator */}
+                <div
+                    className="flex justify-center"
+                    style={{ marginBlockStart: '30px', gap: '12px' }}
+                >
+                    {TESTIMONIALS.map((_, index: number) => (
+                        <button
+                            key={index}
+                            onClick={() => goToSlide(index)}
+                            style={{
+                                width: index === currentSlide ? '32px' : '12px',
+                                height: '12px',
+                                borderRadius: 'var(--radius-6)',
+                                backgroundColor: index === currentSlide ? 'var(--royal-blue-light)' : 'var(--light-gray)',
+                                transition: 'var(--transition)',
+                                border: 'none',
+                                cursor: 'pointer'
+                            }}
+                            onMouseOver={(e) => {
+                                if (index !== currentSlide) {
+                                    e.currentTarget.style.backgroundColor = 'var(--sonic-silver)';
+                                }
+                            }}
+                            onMouseOut={(e) => {
+                                if (index !== currentSlide) {
+                                    e.currentTarget.style.backgroundColor = 'var(--light-gray)';
+                                }
+                            }}
+                            aria-label={`Go to testimonial ${index + 1}`}
+                        />
+                    ))}
+                </div>
+
+                {/* Statistics */}
+                <div
+                    className="grid grid-cols-1 md:grid-cols-3 text-center"
+                    style={{
+                        gap: '30px',
+                        marginBlockStart: '60px'
+                    }}
+                >
+                    {STATISTICS.map((data, index) => (
+                        <div
+                            key={index}
+                            className="service-card text-center"
+                            style={{
+                                backgroundColor: 'var(--white)',
+                                padding: '25px',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: '10px'
+                            }}
+                        >
+                            <div style={{
+                                fontSize: 'var(--fontSize-1)',
+                                fontWeight: 'var(--weight-700)',
+                                color: 'var(--royal-blue-light)',
+                                marginBlockEnd: '8px'
+                            }}>
+                                {data.title}
+                            </div>
+                            <div style={{
+                                color: 'var(--sonic-silver)',
+                                fontSize: 'var(--fontSize-7)'
+                            }}>
+                                {data.subTitle}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default TestimonialSlider;

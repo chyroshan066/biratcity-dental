@@ -10,7 +10,7 @@ export const Hero = memo(() => (
     >
         <div className="custom-container">
             <div className="hero-content">
-                <p className="section-subtitle">Welcome To Rathi Dental</p>
+                <p className="section-subtitle">Welcome To Basuki Dental</p>
                 <h1 className="h1 hero-title">We Are Best Dental Service</h1>
                 <p className="hero-text">
                     Transforming smiles with precision, care, and cutting-edge technology. Experience dentistry that exceeds expectations.
@@ -38,7 +38,7 @@ export const Hero = memo(() => (
 
             <figure className="hero-banner">
                 <Image
-                    src="/images/hero-banner.png"
+                    src="/images/hero-banner.webp"
                     width={587}
                     height={839}
                     alt="hero banner"

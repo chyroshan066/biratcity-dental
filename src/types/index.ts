@@ -21,3 +21,11 @@ export interface Link {
     name: string;
     href: string;
 }
+
+export interface Testimonial {
+    id: number;
+    name: string;
+    rating: number;
+    text: string;
+    image: string;
+}
