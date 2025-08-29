@@ -11,7 +11,7 @@ export const About = memo(() => (
 
             <figure className="about-banner">
                 <Image
-                    src="/images/about-banner.png"
+                    src="/images/about-banner.webp"
                     width={470}
                     height={538}
                     loading="lazy"

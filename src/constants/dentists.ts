@@ -1,8 +1,8 @@
-import { Doctors } from "@/types";
+import { Dentists } from "@/types";
 
-export const DOCTORS: Doctors[] = [
+export const DENTISTS: Dentists[] = [
     {
-        imgSrc: "/images/doctor-1.png",
+        imgSrc: "",
         name: "Howard Holmes",
         ionIcon: [
             {
@@ -20,7 +20,7 @@ export const DOCTORS: Doctors[] = [
         ],
     },
     {
-        imgSrc: "/images/doctor-2.png",
+        imgSrc: "",
         name: "Ella Thompson",
         ionIcon: [
             {
@@ -38,7 +38,7 @@ export const DOCTORS: Doctors[] = [
         ],
     },
     {
-        imgSrc: "/images/doctor-3.png",
+        imgSrc: "",
         name: "Vincent Cooper",
         ionIcon: [
             {
@@ -56,7 +56,7 @@ export const DOCTORS: Doctors[] = [
         ],
     },
     {
-        imgSrc: "/images/doctor-4.png",
+        imgSrc: "",
         name: "Danielle Bryant",
         ionIcon: [
             {

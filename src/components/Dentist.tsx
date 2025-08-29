@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { memo } from "react";
 import { IonIcon } from "./utility/IonIcon";
-import { Doctors } from "@/types";
-import { DOCTORS } from "@/constants";
+import { Dentists } from "@/types";
+import { DENTISTS } from "@/constants";
 import { TitleHeader } from "./utility/TitleHeader";
 
 const DentistCard = memo(({
     imgSrc, name, ionIcon
-}: Doctors) => (
+}: Dentists) => (
     <li className="scrollbar-item">
         <div className="doctor-card">
             <div
@@ -67,7 +67,7 @@ export const Dentist = memo(() => (
 
             <ul className="has-scrollbar">
 
-                {DOCTORS.map((doctor, index) => (
+                {DENTISTS.map((doctor, index) => (
                     <DentistCard
                         key={index}
                         imgSrc={doctor.imgSrc}

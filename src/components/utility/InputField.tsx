@@ -153,7 +153,7 @@ export const InputField = memo((
                 style={{
                     marginBottom: '0',
                     display: 'block',
-                    width: '100%'
+                    width: '100%',
                 }}
             />
             <ErrorMessage message={error} />

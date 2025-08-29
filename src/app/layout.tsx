@@ -97,7 +97,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Basuki Dental" }],
   creator: "Basuki Dental",
   publisher: "Basuki Dental",
-  // metadataBase: new URL("https://www.rathidental.com/"),
+  metadataBase: new URL("https://basuki-dental.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -150,16 +150,16 @@ export const metadata: Metadata = {
     description: "Expert dentists in Biratnagar offering dental implants, braces, root canals, cosmetic dentistry, and preventive care in a modern, patient-friendly clinic.",
     type: "website",
     locale: "en_US",
-    // url: "https://www.rathidental.com/",
+    url: "https://basuki-dental.vercel.app/",
     siteName: "Basuki Dental",
-    // images: [
-    //   {
-    //     url: "/images/preview.webp",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Basuki Dental Clinic Preview",
-    //   }
-    // ],
+    images: [
+      {
+        url: "/images/preview.webp",
+        width: 1200,
+        height: 630,
+        alt: "Basuki Dental Clinic Preview",
+      }
+    ],
   },
   category: "health",
   classification: "Dental Clinic",

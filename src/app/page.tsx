@@ -2,7 +2,7 @@ import { About } from "@/components/About";
 import { Appintment } from "@/components/Appointment";
 import { BackToTop } from "@/components/BackToTop";
 import { CallToAction } from "@/components/CallToAction";
-import { Dentist } from "@/components/Dentist";
+// import { Dentist } from "@/components/Dentist";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -19,7 +19,7 @@ export default function Home() {
           <Hero />
           <Service />
           <About />
-          <Dentist />
+          {/* <Dentist /> */}
           <CallToAction />
           <TestimonialSlider />
           <Appintment />

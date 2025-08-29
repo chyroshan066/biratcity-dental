@@ -4,7 +4,7 @@ import { Button } from "./utility/Button/Button";
 
 export const CallToAction = memo(() => (
     <section
-        className="section cta"
+        className="section cta mt-40 lg:mt-80"
         aria-label="cta"
     >
         <div className="custom-container">
@@ -25,7 +25,7 @@ export const CallToAction = memo(() => (
                 <h2 className="h2 section-title">We Are open And Welcoming Patients</h2>
 
                 <Button
-                    btnLink={"#"}
+                    btnLink={"#contact"}
                     btnText={"Book appointment"}
                 />
 

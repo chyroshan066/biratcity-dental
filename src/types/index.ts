@@ -11,7 +11,7 @@ interface IonIcon {
     ionIconLink: string;
 }
 
-export interface Doctors {
+export interface Dentists {
     imgSrc: string;
     name: string;
     ionIcon: IonIcon[];
