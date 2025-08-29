@@ -5,7 +5,7 @@ export const Hero = memo(() => (
     <section
         className="section hero"
         id="home"
-        style={{ "backgroundImage": "url('/images/hero-bg.png')" } as React.CSSProperties}
+        style={{ "backgroundImage": "url('/images/hero-bg.webp')" } as React.CSSProperties}
         aria-label="hero"
     >
         <div className="custom-container">
