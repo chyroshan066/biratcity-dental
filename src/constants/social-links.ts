@@ -2,15 +2,15 @@ import { Link } from "@/types";
 
 export const SOCIALLINKS: Link[] = [
     {
-        href: "https://www.facebook.com/profile.php?id=61553835254470",
+        href: "https://www.facebook.com/profile.php?id=61555746518031",
         name: "logo-facebook",
     },
     {
-        href: "https://www.instagram.com/basuki.mandal/",
+        href: "instagram.com/BIRATCITY%20DENTAL%20CLINIC",
         name: "logo-instagram",
     },
     {
-        href: "https://www.tiktok.com/@drbasuki?_t=ZS-8zH5FcaPSF8&_r=1",
+        href: "https://www.tiktok.com/@biratcity.dental?_t=ZS-8zigWUEiXFi&_r=1",
         name: "logo-tiktok",
     },
 ];

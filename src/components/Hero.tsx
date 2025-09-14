@@ -118,12 +118,12 @@ export const Hero = memo(() => {
         <section
             className="section hero"
             id="home"
-            style={{ "backgroundImage": "url('/images/hero-bg.webp')" } as React.CSSProperties}
+            style={{ "backgroundImage": "url('/images/hero-bg.svg')" } as React.CSSProperties}
             aria-label="hero"
         >
             <div className="custom-container">
                 <div className="hero-content">
-                    <p className="section-subtitle">Welcome To Basuki Dental</p>
+                    <p className="section-subtitle">Welcome To BiratCity Dental</p>
                     <h1 className="h1 hero-title">We Are Best Dental Service</h1>
                     <p className="hero-text">
                         Transforming smiles with precision, care, and cutting-edge technology. Experience dentistry that exceeds expectations.

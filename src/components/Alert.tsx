@@ -18,18 +18,18 @@ type AlertProps = {
 
 const alertStyles = {
     success: {
-        container: "bg-[var(--carolina-blue)]/30 border-l-4 border-[var(--carolina-blue)] backdrop-blur-sm",
-        icon: "text-[var(--carolina-blue)]",
-        title: "text-[var(--oxford-blue-1)]",
-        message: "text-[var(--oxford-blue-2)]",
-        closeButton: "text-[var(--sonic-silver)] hover:text-[var(--carolina-blue)] hover:bg-[var(--carolina-blue)]/10 rounded-full",
+        container: "bg-[var(--mint-green)]/30 border-l-4 border-[var(--mint-green)] backdrop-blur-sm",
+        icon: "text-[var(--mint-green)]",
+        title: "text-[var(--forest-green-1)]",
+        message: "text-[var(--forest-green-2)]",
+        closeButton: "text-[var(--sonic-silver)] hover:text-[var(--mint-green)] hover:bg-[var(--mint-green)]/10 rounded-full",
         name: "checkmark-circle-outline",
     },
     error: {
         container: "bg-red-50 border-l-4 border-red-500 backdrop-blur-sm",
         icon: "text-red-500",
-        title: "text-[var(--oxford-blue-1)]",
-        message: "text-[var(--oxford-blue-2)]",
+        title: "text-[var(--forest-green-1)]",
+        message: "text-[var(--forest-green-2)]",
         closeButton: "text-[var(--sonic-silver)] hover:text-red-500 hover:bg-red-50 rounded-full",
         name: "alert-circle-outline",
     },

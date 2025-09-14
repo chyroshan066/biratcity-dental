@@ -6,6 +6,7 @@ import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { Intro } from "@/components/Intro";
 import { Maps } from "@/components/Maps";
 import { Service } from "@/components/Service";
 import { TestimonialSlider } from "@/components/Testimonial";
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <article>
           <Hero />
+          <Intro />
           <Service />
           <About />
           {/* <Dentist /> */}

@@ -127,7 +127,7 @@ export const Appintment = memo(() => {
             id="contact"
         >
             <div className="custom-container">
-                <div className="form reservation-form bg-blue-10">
+                <div className="form reservation-form bg-green-10">
                     <form
                         className="form-left"
                         onSubmit={onFormSubmit}
@@ -135,7 +135,7 @@ export const Appintment = memo(() => {
                     >
                         <h2 className="headline-1 text-center">Book Appointment</h2>
                         <p className="form-text text-center">
-                            Booking request <a href="tel:+977-25-582240" className="link">986-1089258 </a>
+                            Booking request <a href="tel:+977-25-582240" className="link">970-4505959 </a>
                             or fill out the appointment form
                         </p>
                         <div className="input-wrapper">
@@ -235,7 +235,7 @@ export const Appintment = memo(() => {
                                         </option>
                                     ))}
 
-                                    {[...Array(7)].map((_, index) => (
+                                    {[...Array(6)].map((_, index) => (
                                         <option
                                             key={index}
                                             value={`${index < 9 ? `0${1 + index}` : 1 + index}:00pm`}
@@ -281,18 +281,18 @@ export const Appintment = memo(() => {
                             href="tel:+9779861089258"
                             className="body-1 contact-number hover-underline"
                         >
-                            986-1089258
+                            970-4505959
                         </a>
                         <div className="separator"></div>
                         <p className="contact-label">Location</p>
                         <address className="body-4">
-                            Manendra Chowk,  <br />
+                            ShaniMandir,  <br />
                             Biratnagar, Nepal
                         </address>
                         <p className="contact-label">Daily</p>
                         <p className="body-4">
                             Monday to Sunday <br />
-                            9.00 am - 7.00pm
+                            9.00 am - 6.00pm
                         </p>
                     </div>
                 </div>

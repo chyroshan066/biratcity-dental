@@ -72,8 +72,8 @@ export const Maps: React.FC = () => {
 
     // Dental clinic location (you can change these coordinates)
     const clinicLocation: ClinicLocation = {
-        lat: 26.4544,
-        lng: 87.27747,
+        lat: 26.45805,
+        lng: 87.27791,
         name: "Basuki Dental Clinic",
         address: "Biratnagar, Morang, Nepal"
     };
@@ -248,7 +248,7 @@ export const Maps: React.FC = () => {
                                     width: '40px',
                                     height: '40px',
                                     border: '4px solid var(--light-gray)',
-                                    borderTop: '4px solid var(--royal-blue-light)',
+                                    borderTop: '4px solid var(--emerald-green)',
                                     borderRadius: '50%',
                                     animation: 'spin 1s linear infinite',
                                     marginInline: 'auto',
@@ -288,7 +288,7 @@ export const Maps: React.FC = () => {
         
         .leaflet-control-zoom a {
           background-color: var(--white) !important;
-          color: var(--oxford-blue-1) !important;
+          color: var(--forest-green-1) !important;
           border: none !important;
           border-radius: var(--radius-4) !important;
           font-weight: var(--weight-700) !important;
@@ -296,7 +296,7 @@ export const Maps: React.FC = () => {
         }
         
         .leaflet-control-zoom a:hover {
-          background-color: var(--royal-blue-light) !important;
+          background-color: var(--emerald-green) !important;
           color: var(--white) !important;
         }
         

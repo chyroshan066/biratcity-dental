@@ -23,7 +23,7 @@ export const ErrorMessage = memo(({
     if (!message) return null;
 
     return <span style={{
-        color: 'var(--carolina-blue)',
+        color: 'var(--mint-green)',
         fontSize: '0.875rem !important',
         display: 'block',
         fontFamily: 'var(--fontFamily-roboto)',

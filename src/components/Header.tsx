@@ -5,6 +5,8 @@ import { IonIcon } from "./utility/IonIcon";
 import { NAVLINKS, SOCIALLINKS } from "@/constants";
 import { SocialLink } from "./utility/SocialLink";
 import { Button } from "./utility/Button/Button";
+import Image from "next/image";
+import Link from "next/link";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -43,20 +45,20 @@ export const Header = memo(() => {
                         <li className="contact-item">
                             <IonIcon name="mail-outline" />
                             <a
-                                href="mailto:mandalbaski8284@gmail.com"
+                                href="mailto:sahambika9800@gmail.com"
                                 className="contact-link"
                             >
-                                mandalbaski8284@gmail.com
+                                sahambika9800@gmail.com
                             </a>
                         </li>
 
                         <li className="contact-item">
                             <IonIcon name="call-outline" />
                             <a
-                                href="tel:9861089258"
+                                href="tel:9704505959"
                                 className="contact-link"
                             >
-                                986-1089258
+                                970-4505959
                             </a>
                         </li>
 
@@ -79,12 +81,17 @@ export const Header = memo(() => {
                 data-header
             >
                 <div className="custom-container">
-                    <a
+                    <Link
                         href="#"
                         className="logo"
                     >
-                        Basuki Dental
-                    </a>
+                        <Image
+                            width={60}
+                            height={200}
+                            src="/images/logo.webp"
+                            alt="logo"
+                        />
+                    </Link>
                     <nav
                         className={`navbar custom-container ${isNavActive ? 'active' : ''}`}
                         data-navbar
