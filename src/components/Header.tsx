@@ -45,10 +45,10 @@ export const Header = memo(() => {
                         <li className="contact-item">
                             <IonIcon name="mail-outline" />
                             <a
-                                href="mailto:sahambika9800@gmail.com"
+                                href="mailto:biratcitydentalclinic@gmail.com"
                                 className="contact-link"
                             >
-                                sahambika9800@gmail.com
+                                biratcitydentalclinic@gmail.com
                             </a>
                         </li>
 
@@ -115,7 +115,7 @@ export const Header = memo(() => {
                     </nav>
 
                     <Button
-                        btnLink={"#contact"}
+                        btnLink={"/#contact"}
                         btnText={"Book appointment"}
                     />
 

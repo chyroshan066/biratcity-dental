@@ -112,10 +112,10 @@ export const Footer = memo(() => (
                             <IonIcon name="mail-outline" />
                         </div>
                         <a
-                            href="mailto:sahambika9800@gmail.com"
+                            href="mailto:biratcitydentalclinic@gmail.com"
                             className="footer-link"
                         >
-                            sahambika9800@gmail.com
+                            biratcitydentalclinic@gmail.com
                         </a>
                     </li>
 

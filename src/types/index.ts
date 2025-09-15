@@ -30,3 +30,12 @@ export interface Testimonial {
     image: string;
     position?: string;
 }
+
+export interface MediaItem {
+  id: number;
+  src: string;
+  alt: string;
+  title: string;
+  type: 'image' | 'video';
+  poster?: string; // Optional thumbnail for videos
+}
