@@ -72,10 +72,10 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Basuki Dental - Advanced Dental Care in Biratnagar, Nepal",
-  description: "Basuki Dental offers comprehensive dental care in Biratnagar, Nepal. Expert dentists providing treatments such as dental implants, braces, root canal therapy, cosmetic dentistry, teeth whitening, and preventive oral care in a modern, comfortable clinic.",
+  title: "BiratCity Dental - Advanced Dental Care in Biratnagar, Nepal",
+  description: "BiratCity Dental offers comprehensive dental care in Biratnagar, Nepal. Expert dentists providing treatments such as dental implants, braces, root canal therapy, cosmetic dentistry, teeth whitening, and preventive oral care in a modern, comfortable clinic.",
   keywords: [
-    "Basuki Dental",
+    "BiratCity Dental",
     "dental clinic",
     "dentist Biratnagar",
     "dental implants Biratnagar",
@@ -95,12 +95,12 @@ export const metadata: Metadata = {
     "affordable dental care Biratnagar",
     "emergency dental Biratnagar",
     "dental hygiene Biratnagar",
-    "Basuki Dental Nepal"
+    "BiratCity Dental Nepal"
   ],
-  authors: [{ name: "Basuki Dental" }],
-  creator: "Basuki Dental",
-  publisher: "Basuki Dental",
-  metadataBase: new URL("https://basuki-dental.vercel.app/"),
+  authors: [{ name: "BiratCity Dental" }],
+  creator: "BiratCity Dental",
+  publisher: "BiratCity Dental",
+  metadataBase: new URL("https://biratcitydental.vercel.app/"),
   alternates: {
     canonical: "/",
   },
