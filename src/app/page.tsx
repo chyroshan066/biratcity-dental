@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
 import { Maps } from "@/components/Maps";
+import { Review } from "@/components/Review";
 import { Service } from "@/components/Service";
 import { TestimonialSlider } from "@/components/Testimonial";
 
@@ -24,6 +25,7 @@ export default function Home() {
           {/* <Dentist /> */}
           <CallToAction />
           <TestimonialSlider />
+          <Review />
           <Appintment />
           <Maps />
         </article>

@@ -32,9 +32,9 @@ export const SERVICES: Services[] = [
     {
         id: 5,
         imgSrc: "/images/service-icons/service-icon-5.webp",
-        name: "Composite Restoration",
+        name: "Composite and GIC Restoration",
         text: "Tooth-colored fillings to repair cavities and restore natural appearance.",
-        href: "composite-restoration"
+        href: "composite-and-gic-restoration"
     },
     {
         id: 6,
@@ -81,22 +81,43 @@ export const SERVICES: Services[] = [
     {
         id: 12,
         imgSrc: "/images/service-icons/service-icon-12.webp",
-        name: "Dental Camp",
-        text: "Community outreach providing free dental checkups and health education.",
-        href: "dental-camp"
-    },
-    {
-        id: 13,
-        imgSrc: "/images/service-icons/service-icon-13.webp",
         name: "Halitosis Treatment",
         text: "Specialized care to eliminate bad breath and restore fresh confidence.",
         href: "halitosis-treatment"
     },
     {
-        id: 14,
-        imgSrc: "/images/service-icons/service-icon-14.webp",
+        id: 13,
+        imgSrc: "/images/service-icons/service-icon-13.webp",
         name: "Boil Treatment",
         text: "Professional care to treat oral boils and prevent painful infections.",
         href: "boil-treatment"
+    },
+    {
+        id: 14,
+        imgSrc: "/images/service-icons/service-icon-14.webp",
+        name: "Scaling",
+        text: "Professional plaque and tartar removal to maintain healthy gums and teeth.",
+        href: "scaling"
+    },
+    {
+        id: 15,
+        imgSrc: "/images/service-icons/service-icon-15.webp",
+        name: "Polishing",
+        text: "Professional tooth polishing to remove stains and restore natural shine.",
+        href: "polishing"
+    },
+    {
+        id: 16,
+        imgSrc: "/images/service-icons/service-icon-16.webp",
+        name: "Trauma Management",
+        text: "Emergency care for dental injuries to save and restore damaged teeth.",
+        href: "trauma-management"
+    },
+    {
+        id: 17,
+        imgSrc: "/images/service-icons/service-icon-17.webp",
+        name: "Full Mouth Rehabilitation",
+        text: "Comprehensive restoration to rebuild and transform your entire smile.",
+        href: "full-mouth-rehabilitation"
     },
 ];
