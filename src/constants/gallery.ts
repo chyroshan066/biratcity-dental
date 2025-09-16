@@ -16,13 +16,13 @@ export const MEDIA_ITEMS: MediaItem[] = [
         type: "video",
         // poster: "/images/gallery/v1-poster.webp" // Optional: thumbnail for the video
     },
-    {
-        id: 3,
-        src: "/images/media/images/g2.webp",
-        alt: "Grand Opening Ceremony - Birat City Dental Clinic",
-        title: "Grand Opening Ceremony - Birat City Dental Clinic",
-        type: "image"
-    },
+    // {
+    //     id: 3,
+    //     src: "/images/media/images/g2.webp",
+    //     alt: "Grand Opening Ceremony - Birat City Dental Clinic",
+    //     title: "Grand Opening Ceremony - Birat City Dental Clinic",
+    //     type: "image"
+    // },
     {
         id: 4,
         src: "/images/media/images/g3.webp",

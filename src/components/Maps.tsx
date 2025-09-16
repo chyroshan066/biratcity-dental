@@ -74,7 +74,7 @@ export const Maps: React.FC = () => {
     const clinicLocation: ClinicLocation = {
         lat: 26.45805,
         lng: 87.27791,
-        name: "Basuki Dental Clinic",
+        name: "BiratCity Dental Clinic",
         address: "Biratnagar, Morang, Nepal"
     };
 

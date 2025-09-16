@@ -149,25 +149,25 @@ export const metadata: Metadata = {
   },
   manifest: '/favicon_io/site.webmanifest',
   openGraph: {
-    title: "Basuki Dental - Advanced Dental Care in Biratnagar, Nepal",
+    title: "BiratCity Dental - Advanced Dental Care in Biratnagar, Nepal",
     description: "Expert dentists in Biratnagar offering dental implants, braces, root canals, cosmetic dentistry, and preventive care in a modern, patient-friendly clinic.",
     type: "website",
     locale: "en_US",
-    url: "https://basuki-dental.vercel.app/",
-    siteName: "Basuki Dental",
+    url: "https://biratcitydental.vercel.app/",
+    siteName: "BiratCity Dental",
     images: [
       {
         url: "/images/preview.webp",
         width: 1200,
         height: 630,
-        alt: "Basuki Dental Clinic Preview",
+        alt: "BiratCity Dental Clinic Preview",
       }
     ],
   },
   category: "health",
   classification: "Dental Clinic",
   referrer: "origin-when-cross-origin",
-  applicationName: "Basuki Dental",
+  applicationName: "BiratCity Dental",
   generator: "Next.js",
   viewport: {
     width: 'device-width',

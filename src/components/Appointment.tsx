@@ -291,7 +291,7 @@ export const Appintment = memo(() => {
                         </address>
                         <p className="contact-label">Daily</p>
                         <p className="body-4">
-                            Monday to Sunday <br />
+                            Sunday to Saturday <br />
                             9.00 am - 6.00pm
                         </p>
                     </div>
