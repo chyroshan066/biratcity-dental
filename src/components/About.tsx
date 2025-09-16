@@ -3,7 +3,7 @@ import { memo } from "react";
 
 export const About = memo(() => (
     <section
-        className="section about"
+        className="section about lg:-mt-50 -mt-30"
         id="about"
         aria-label="about"
     >

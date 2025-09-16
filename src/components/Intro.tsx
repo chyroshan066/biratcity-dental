@@ -84,8 +84,8 @@ export const Intro = memo(({
                     <div className="intro-header text-center">
                         <p className="section-subtitle">Our Story</p>
                         <h2 className="h2 section-title">
-                            Experience Excellence In <br />
-                            Dental Care
+                            Your Smile<br />
+                            Our Priority
                         </h2>
                         <p className="section-text">
                             Watch our journey of providing world-class dental treatments with cutting-edge technology and compassionate care in the heart of Biratnagar.
