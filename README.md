@@ -1,10 +1,10 @@
-# Basuki Dental Clinic Website
+# BiratCity Dental Clinic Website
 
 A comprehensive, responsive dental website built with Next.js and TypeScript, featuring online appointment booking, service showcases, patient testimonials, and seamless customer engagement tools designed to enhance the dental practice experience.
 
 ## 🍽️ About
 
-Basuki Dental is a premium dental practice website designed to provide patients with an exceptional online experience. The site features elegant design and intuitive navigation to showcase comprehensive dental services and facilitate seamless appointment booking.
+BiratCity Dental is a premium dental practice website designed to provide patients with an exceptional online experience. The site features elegant design and intuitive navigation to showcase comprehensive dental services and facilitate seamless appointment booking.
 
 ## ✨ Features
 
@@ -68,7 +68,7 @@ npm run start
 ## 🏗️ Project Structure
 
 ```
-basuki-dental/
+biratcity-dental/
 ├── .github/
 ├── public/
 │   ├── fonts/
@@ -81,7 +81,7 @@ basuki-dental/
 │   │   │   ├── ...
 │   │   │   └── Roboto-Regular.woff2
 │   ├── images/
-│   │   ├── dentists/
+│   │   ├── media/
 │   │   ├── ...
 │   │   └── service-banner.webp
 │   └── favicon_io/
@@ -92,7 +92,7 @@ basuki-dental/
 │   ├── app/
 │   │   ├── globals.css
 │   │   ├── layout.tsx
-│   │   └── page.tsx
+│   │   └── (pages)
 │   ├── components/
 │   │   ├── utility/
 │   │   │   ├── Button/
@@ -102,7 +102,7 @@ basuki-dental/
 │   │   ├── ...
 │   │   └── Testimonial.tsx
 │   ├── constants/
-│   │   ├── dentists.ts
+│   │   ├── contacts.ts
 │   │   ├── ...
 │   │   └── testimonials.ts
 │   ├── middlewares/
@@ -121,6 +121,7 @@ basuki-dental/
 ├── package.json
 ├── postcss.config.mjs
 ├── tsconfig.json
+├── LICENSE
 └── README.md
 ```
 
@@ -147,7 +148,7 @@ The website is fully responsive and tested on:
 
 ### Custom Domain Setup
 
-The website is configured for the custom domain `basukidental.com`:
+The website is configured for the custom domain `biratcitydental.vercel.app`:
 
 1. DNS records are configured for the domain
 2. SSL certificates are automatically provisioned
@@ -185,7 +186,7 @@ npm run type-check
 
 The website is deployed on Vercel with automatic deployments:
 
-- **Production**: https://basukidental.com
+- **Production**: https://biratcitydental.vercel.app
 - **Preview**: Automatic preview deployments for pull requests
 
 ### Manual Deployment
@@ -198,8 +199,8 @@ npm run export  # if using static export
 ## 📞 Support & Maintenance
 
 ### Client Information
-- **Dental Clinic**: Basuki Dental
-- **Domain**: basukidental.com
+- **Dental Clinic**: BiratCity Dental
+- **Domain**: biratcitydental.vercel.app
 - **Deployment**: Vercel
 
 ### Developer Contact
@@ -207,7 +208,7 @@ For technical support or website updates, contact the developer.
 
 ## 📝 License
 
-This project is proprietary software developed specifically for Basuki Dental Clinic.
+This project is proprietary software developed specifically for BiratCity Dental Clinic.
 
 ---
 
