@@ -2,7 +2,7 @@ import { SERVICES } from "@/constants";
 import { Services } from "@/types";
 import Image from "next/image";
 import { memo } from "react";
-import { TitleHeader } from "./utility/TitleHeader";
+import { TitleHeader } from "../../../../components/utility/TitleHeader";
 
 const ServiceCard = memo(({
     imgSrc, name, text, href

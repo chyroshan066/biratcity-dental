@@ -10,6 +10,7 @@ import { AppointmentFormData, AppointmentFormSchema } from "@/middlewares/schema
 import { SubmitButton } from "./utility/Button/SubmitButton";
 import { ErrorMessage, InputField } from "./utility/InputField";
 import { Alert } from "./Alert";
+import { CONTACTS } from "@/constants";
 
 interface AlertState {
     isVisible: boolean;
@@ -277,12 +278,17 @@ export const Appintment = memo(() => {
                     <div className="form-right text-center form-right-bg">
                         <h2 className="headline-1 text-center">Contact Us</h2>
                         <p className="contact-label">Booking Request</p>
-                        <a
-                            href="tel:+9779861089258"
-                            className="body-1 contact-number hover-underline"
-                        >
-                            970-4505959
-                        </a>
+
+                        {CONTACTS.map((contact, index) => (
+                            <a
+                                key={index}
+                                href={`tel:+977${contact.number}`}
+                                className="body-1 contact-number hover-underline"
+                            >
+                                {contact.number}
+                            </a>
+                        ))}
+
                         <div className="separator"></div>
                         <p className="contact-label">Location</p>
                         <address className="body-4">
@@ -291,8 +297,12 @@ export const Appintment = memo(() => {
                         </address>
                         <p className="contact-label">Daily</p>
                         <p className="body-4">
-                            Sunday to Saturday <br />
-                            9.00 am - 6.00pm
+                            Sunday to Friday <br />
+                            9.00 am - 7.00pm
+                        </p>
+                        <p className="body-4">
+                            Saturday <br />
+                            10.00 am - 2.00pm
                         </p>
                     </div>
                 </div>

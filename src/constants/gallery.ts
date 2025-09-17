@@ -51,13 +51,13 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "BiratCity Dental Clinic - Making a Difference in Our Community",
         type: "video"
     },
-    {
-        id: 8,
-        src: "/images/media/images/g6.webp",
-        alt: "Successful Tooth Extraction - Expert Surgical Care",
-        title: "Successful Tooth Extraction - Expert Surgical Care",
-        type: "image"
-    },
+    // {
+    //     id: 8,
+    //     src: "/images/media/images/g6.webp",
+    //     alt: "Successful Tooth Extraction - Expert Surgical Care",
+    //     title: "Successful Tooth Extraction - Expert Surgical Care",
+    //     type: "image"
+    // },
     {
         id: 9,
         src: "/images/media/images/g7.webp",
@@ -135,13 +135,13 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "Compassionate Dental Care - Patient Comfort is Our Priority",
         type: "image"
     },
-    {
-        id: 20,
-        src: "/images/media/images/g15.webp",
-        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
-        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
-        type: "image"
-    },
+    // {
+    //     id: 20,
+    //     src: "/images/media/images/g15.webp",
+    //     alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+    //     title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+    //     type: "image"
+    // },
     {
         id: 21,
         src: "/images/media/images/g16.webp",
@@ -149,20 +149,6 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
         type: "image"
     },
-    // {
-    //     id: 22,
-    //     src: "/images/media/images/g17.webp",
-    //     alt: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
-    //     title: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
-    //     type: "image"
-    // },
-    // {
-    //     id: 21,
-    //     src: "/images/media/videos/v6.webm",
-    //     alt: "Ultrasonic Scaling Results - Before & After Deep Cleaning",
-    //     title: "Ultrasonic Scaling Results - Before & After Deep Cleaning",
-    //     type: "video"
-    // },
 ];
 
 // Legacy export for backward compatibility

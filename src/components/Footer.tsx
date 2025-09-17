@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { IonIcon } from "./utility/IonIcon";
-import { NAVLINKS, SERVICES, SOCIALLINKS } from "@/constants";
+import { CONTACTS, NAVLINKS, SERVICES, SOCIALLINKS } from "@/constants";
 import { Link, Services } from "@/types";
 import { SocialLink } from "./utility/SocialLink";
 
@@ -95,17 +95,22 @@ export const Footer = memo(() => (
                         </address>
                     </li>
 
-                    <li className="footer-item">
-                        <div className="item-icon">
-                            <IonIcon name="call-outline" />
-                        </div>
-                        <a
-                            href="tel:+9779704505959"
-                            className="footer-link"
+                    {CONTACTS.map((contact, index) => (
+                        <li
+                            className="footer-item"
+                            key={index}
                         >
-                            970-4505959
-                        </a>
-                    </li>
+                            <div className="item-icon">
+                                <IonIcon name={contact.icon} />
+                            </div>
+                            <a
+                                href={`tel:+977${contact.number}`}
+                                className="footer-link"
+                            >
+                                {contact.number}
+                            </a>
+                        </li>
+                    ))}
 
                     <li className="footer-item">
                         <div className="item-icon">

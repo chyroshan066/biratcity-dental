@@ -39,3 +39,8 @@ export interface MediaItem {
   type: 'image' | 'video';
   poster?: string; // Optional thumbnail for videos
 }
+
+export interface Contact {
+    icon: string;
+    number: number;
+}

@@ -7,6 +7,7 @@ import { SocialLink } from "./utility/SocialLink";
 import { Button } from "./utility/Button/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { CONTACTS } from "@/constants";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -52,15 +53,20 @@ export const Header = memo(() => {
                             </a>
                         </li>
 
-                        <li className="contact-item">
-                            <IonIcon name="call-outline" />
-                            <a
-                                href="tel:9704505959"
-                                className="contact-link"
+                        {CONTACTS.map((contact, index) => (
+                            <li
+                                className="contact-item"
+                                key={index}
                             >
-                                970-4505959
-                            </a>
-                        </li>
+                                <IonIcon name={contact.icon} />
+                                <a
+                                    href={`tel:${contact.number}}`}
+                                    className="contact-link"
+                                >
+                                    {contact.number}
+                                </a>
+                            </li>
+                        ))}
 
                     </ul>
                     <ul className="social-list">
