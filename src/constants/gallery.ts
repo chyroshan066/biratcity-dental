@@ -16,13 +16,13 @@ export const MEDIA_ITEMS: MediaItem[] = [
         type: "video",
         // poster: "/images/gallery/v1-poster.webp" // Optional: thumbnail for the video
     },
-    // {
-    //     id: 3,
-    //     src: "/images/media/images/g2.webp",
-    //     alt: "Grand Opening Ceremony - Birat City Dental Clinic",
-    //     title: "Grand Opening Ceremony - Birat City Dental Clinic",
-    //     type: "image"
-    // },
+    {
+        id: 3,
+        src: "/images/media/images/g2.webp",
+        alt: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
+        title: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
+        type: "image"
+    },
     {
         id: 4,
         src: "/images/media/images/g3.webp",
@@ -34,7 +34,7 @@ export const MEDIA_ITEMS: MediaItem[] = [
         id: 5,
         src: "/images/media/images/g4.webp",
         alt: "BiratCity Dental Clinic - Serving Our Community Through Free Dental Checkups",
-        title: "SBiratCity Dental Clinic - Serving Our Community Through Free Dental Checkups",
+        title: "BiratCity Dental Clinic - Serving Our Community Through Free Dental Checkups",
         type: "image"
     },
     {
@@ -51,13 +51,13 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "BiratCity Dental Clinic - Making a Difference in Our Community",
         type: "video"
     },
-    // {
-    //     id: 8,
-    //     src: "/images/media/images/g6.webp",
-    //     alt: "Successful Tooth Extraction - Expert Surgical Care",
-    //     title: "Successful Tooth Extraction - Expert Surgical Care",
-    //     type: "image"
-    // },
+    {
+        id: 8,
+        src: "/images/media/images/g6.webp",
+        alt: "BiratCity Dental Clinic - Serving Our Community Through Free Dental Checkups",
+        title: "BiratCity Dental Clinic - Serving Our Community Through Free Dental Checkups",
+        type: "image"
+    },
     {
         id: 9,
         src: "/images/media/images/g7.webp",
@@ -135,16 +135,65 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "Compassionate Dental Care - Patient Comfort is Our Priority",
         type: "image"
     },
-    // {
-    //     id: 20,
-    //     src: "/images/media/images/g15.webp",
-    //     alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
-    //     title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
-    //     type: "image"
-    // },
+    {
+        id: 20,
+        src: "/images/media/images/g15.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
     {
         id: 21,
         src: "/images/media/images/g16.webp",
+        alt: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
+        title: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
+        type: "image"
+    },
+    {
+        id: 22,
+        src: "/images/media/images/g17.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 23,
+        src: "/images/media/images/g18.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 24,
+        src: "/images/media/images/g19.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 25,
+        src: "/images/media/images/g20.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 26,
+        src: "/images/media/images/g21.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 27,
+        src: "/images/media/images/g22.webp",
+        alt: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        title: "BiratCity Dental Clinic - Free Community Dental Screening Program",
+        type: "image"
+    },
+    {
+        id: 28,
+        src: "/images/media/images/g23.webp",
         alt: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
         title: "Comfortable Dental Experience - Modern Care in a Relaxing Environment",
         type: "image"
