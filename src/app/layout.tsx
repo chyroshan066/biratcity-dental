@@ -186,30 +186,28 @@ export default function RootLayout({
     <html lang="en">
 
       <head>
-        <head>
-          <script
-            type="application/ld+json"
-            // "dangerouslySetInnerHTML" is a way to inject raw HTML content into a React component.
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(dentalClinicStructuredData),  // "__html" property accepts raw HTML/text
-            }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(dentalServicesStructuredData),
-            }}
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(dentalSpecialtiesStructuredData),
-            }}
-          />
-          {/* Verification tags if needed */}
-          <meta name="google-site-verification" content="PWqpvd61tdTZrjmxDtf0Ag7Yt3br6aIqDHIBth35n-w" />
-          {/* <meta name="facebook-domain-verification" content="your-verification-code" /> */}
-        </head>
+        <script
+          type="application/ld+json"
+          // "dangerouslySetInnerHTML" is a way to inject raw HTML content into a React component.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(dentalClinicStructuredData),  // "__html" property accepts raw HTML/text
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(dentalServicesStructuredData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(dentalSpecialtiesStructuredData),
+          }}
+        />
+        {/* Verification tags if needed */}
+        <meta name="google-site-verification" content="PWqpvd61tdTZrjmxDtf0Ag7Yt3br6aIqDHIBth35n-w" />
+        {/* <meta name="facebook-domain-verification" content="your-verification-code" /> */}
       </head>
 
       <body
