@@ -121,6 +121,7 @@ biratcity-dental/
 ├── package.json
 ├── postcss.config.mjs
 ├── tsconfig.json
+├── vercel.json
 ├── LICENSE
 └── README.md
 ```
@@ -178,7 +179,7 @@ npm run type-check
 
 - Meta tags
 - Open Graph support
-- Structured data for restaurant information
+- Structured data for clinic information
 - Local business schema markup
 - Sitemap generation
 
